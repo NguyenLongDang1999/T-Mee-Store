@@ -1,0 +1,32 @@
+.slider {
+    .categories {
+        font-size: 0.875em;
+        background-color: $color-grey2;
+        color: $color-white;
+        margin-top: -6px;
+        height: 458px;
+        overflow: auto;
+
+        &:before {
+            content: "";
+            height: 6px;
+            display: block;
+        }
+
+        &__link {
+            padding: 10px 16px;
+            display: block;
+            cursor: pointer;
+            transition: $transition;
+
+            &:hover {
+                background-color: #525d66;
+            }
+        }
+    }
+
+    .swiffy-slider {
+        height: 100%;
+        padding-top: 30px;
+    }
+}

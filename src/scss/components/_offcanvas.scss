@@ -1,0 +1,136 @@
+.offcanvas {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 290px;
+    background-color: $bg-white;
+    z-index: 21;
+    opacity: 0;
+    visibility: hidden;
+    transition: $transition;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+
+    &__header {
+        border-bottom: $border-bottom;
+        padding: 10px 20px;
+
+        &--title {
+            font-weight: 600;
+            font-size: 1em;
+        }
+    }
+
+    &__cart {
+        width: 350px;
+        transform: translateX(290px);
+        right: 0;
+
+        &--item {
+            padding: 15px 20px;
+        }
+
+        &--img {
+            width: 20%;
+            height: 100%;
+        }
+
+        &--info {
+            width: 90%;
+            padding: 0 10px;
+
+            .title {
+                font-size: 0.975em;
+                line-height: 18px;
+                font-weight: 400;
+                height: 36px;
+                transition: $transition;
+
+                &:hover {
+                    color: #1a66ff;
+                }
+            }
+
+            .price {
+                &__quantity {
+                    font-size: 0.8125em;
+                }
+
+                &__result {
+                    font-size: 0.875em;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        &--close {
+            width: 10%;
+        }
+
+        &--footer {
+            margin-top: 40px;
+            padding: 15px 20px;
+            border-top: $border-bottom;
+
+            .price {
+                &__item {
+                    line-height: 30px;
+                }
+            }
+
+            .action {
+                padding: 15px;
+                margin-top: 20px;
+
+                &__item {
+                    display: inline-block;
+                    flex-grow: 1;
+                    padding: 0.5rem 1.25rem;
+
+                    &:hover {
+                        background-color: $color-grey2;
+                        color: $color-white;
+                    }
+                }
+
+                &__cart {
+                    background-color: $bg-grey3;
+                    margin-right: 8px;
+                }
+
+                &__checkout {
+                    background-color: $bg-main;
+                }
+            }
+        }
+    }
+
+    // End Cart
+
+    &__menu {
+        transform: translateX(-290px);
+
+        &--item {
+            border-bottom: 1px solid #ebebeb;
+
+            &:hover {
+                background-color: $bg-grey;
+            }
+
+            &:last-child {
+                border-bottom: 0;
+            }
+        }
+
+        &--link {
+            display: block;
+            padding: 10px 20px;
+        }
+    }
+
+    // End Menu
+}

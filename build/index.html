@@ -1,15 +1,785 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i">
+    <link rel="stylesheet" href="css/plugins.min.css"/>
     <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
+    <!-- Begin:: Header -->
+    <header class="header d-lg-block d-none">
+        <!-- Begin:: TopBar -->
+        <div class="topbar text-capitalize">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="topbar__welcome">
+                            <span class="topbar__welcome--text">Welcome you to TMYSHOP</span>
+                        </div>
+                    </div>
 
+                    <div class="col-md-6">
+                        <ul class="topbar__dropdown d-flex justify-content-end">
+                            <li class="topbar__dropdown--item">
+                                <a href="javascript:void(0)" class="topbar__dropdown--link">
+                                    Tài khoản
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-chevron-down">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </a>
+
+                                <ul class="topbar__dropdown--menu">
+                                    <li class="topbar__dropdown--menu__item">
+                                        <a href="login.html" class="topbar__dropdown--menu__link">
+                                            Đăng nhập
+                                        </a>
+                                    </li>
+
+                                    <li class="topbar__dropdown--menu__item">
+                                        <a href="register.html" class="topbar__dropdown--menu__link">
+                                            Đăng ký
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="topbar__dropdown--item">
+                                <a href="javascript:void(0)" class="topbar__dropdown--link">
+                                    Kiểm Tra Đơn Hàng
+                                </a>
+                            </li>
+
+                            <!-- Begin:: Login -->
+                            <!--                            <li class="topbar__dropdown&#45;&#45;item">-->
+                            <!--                                <a href="javascript:void(0)" class="topbar__dropdown&#45;&#45;link">-->
+                            <!--                                    Nguyễn long đăng-->
+                            <!--                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"-->
+                            <!--                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"-->
+                            <!--                                         stroke-linejoin="round" class="feather feather-chevron-down">-->
+                            <!--                                        <polyline points="6 9 12 15 18 9"></polyline>-->
+                            <!--                                    </svg>-->
+                            <!--                                </a>-->
+
+                            <!--                                <ul class="topbar__dropdown&#45;&#45;menu">-->
+                            <!--                                    <li class="topbar__dropdown&#45;&#45;menu__item">-->
+                            <!--                                        <a href="profile.html" class="topbar__dropdown&#45;&#45;menu__link">-->
+                            <!--                                            Thông tin cá nhân-->
+                            <!--                                        </a>-->
+                            <!--                                    </li>-->
+
+                            <!--                                    <li class="topbar__dropdown&#45;&#45;menu__item">-->
+                            <!--                                        <a href="profile.html" class="topbar__dropdown&#45;&#45;menu__link">-->
+                            <!--                                            Cập nhật thông tin-->
+                            <!--                                        </a>-->
+                            <!--                                    </li>-->
+
+                            <!--                                    <li class="topbar__dropdown&#45;&#45;menu__item">-->
+                            <!--                                        <a href="order.html" class="topbar__dropdown&#45;&#45;menu__link">-->
+                            <!--                                            Đơn hàng-->
+                            <!--                                        </a>-->
+                            <!--                                    </li>-->
+
+                            <!--                                    <li class="topbar__dropdown&#45;&#45;menu__item">-->
+                            <!--                                        <hr/>-->
+                            <!--                                    </li>-->
+
+                            <!--                                    <li class="topbar__dropdown&#45;&#45;menu__item">-->
+                            <!--                                        <a href="order.html" class="topbar__dropdown&#45;&#45;menu__link">-->
+                            <!--                                            Đăng xuất-->
+                            <!--                                        </a>-->
+                            <!--                                    </li>-->
+                            <!--                                </ul>-->
+                            <!--                            </li>-->
+                            <!-- End:: Login -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End:: TopBar -->
+
+        <!-- Begin:: Middle -->
+        <div class="middle">
+            <div class="container">
+                <div class="row middle__container d-flex align-items-center">
+                    <div class="col-md-3">
+                        <a href="index.html">
+                            <svg viewBox="0.27 -11.34 72.631 11.57" height="26" class="fl-textpath"
+                                 xmlns="http://www.w3.org/2000/svg" width="196">
+                                <path
+                                    d="M3.65-11.1H5.6v9.31q0 .62.13.79.14.18.25.23.11.05.25.08.4.1.61.23V0H2.45v-.46q.17-.11.44-.18.28-.08.4-.13.11-.04.19-.15.17-.24.17-.87v-9.31zm2.6 0h1.67q.32 0 1.07-.12v3.7h-.53q-.11-.3-.19-.63t-.18-.66q-.11-.32-.24-.62t-.34-.53q-.47-.5-1.26-.5v-.64zm-5.98-.1.01-.02q.38.12.57.12H3v.64q-1.12 0-1.59 1.04-.23.49-.36 1.05-.14.56-.24.85H.27v-3.68zm16.483 8.57L16.333-4l2.1-7.1h3.51v.46q-.19.09-.37.14-.19.05-.34.12-.33.18-.33.59v8.35q0 .49.34.67.15.09.34.15.2.07.42.16V0h-4.09v-.46q.19-.09.37-.16.19-.06.33-.15.34-.19.34-.67v-8.54h-.03l-2.17 7.35zm-5.73-6.93.89.33v7.57q0 .61.36.86.16.1.37.17t.42.17V0h-3.13v-.46q.18-.09.38-.15.19-.06.35-.17.36-.24.36-.87v-7.91zM15.043 0l-3.1-9.82q-1.65-.63-2.01-.82v-.46h3.52l2.99 9.49-.47 1.61h-.93zm13.639-5.35-.47-.84q1.51-2.95 1.62-3.23.14-.35.14-.53 0-.18-.1-.28-.11-.11-.26-.16-.15-.06-.34-.11-.19-.04-.35-.11v-.49h3.36v.49q-.13.09-.44.19t-.46.17q-.14.08-.35.39-.21.32-.52.89-.32.56-.62 1.17-.31.6-.61 1.23-.3.62-.6 1.22zm-.78-.24.45.88-.08.12v2.79q0 .88.42 1.05.13.05.27.08.43.11.58.21V0h-4.48v-.46q.17-.11.45-.17.28-.07.4-.12.13-.05.21-.17.2-.26.2-.92v-2.79l-2.71-5.19q-.23-.44-.88-.66-.15-.05-.3-.13v-.49h4.37v.49q-.19.08-.38.12-.2.04-.34.08-.35.12-.35.39 0 .21.24.68.25.47.49.94.23.46.59 1.15.35.69.85 1.66zm8.673-5.09v-.64q.57.05.98.27.41.21.57.29.15.09.25.09.11 0 .18-.05.07-.05.12-.11.06-.06.1-.13.04-.08.08-.14h.72v3.66h-.57q-.17-.18-.39-.78-.22-.61-.37-.97t-.38-.67q-.5-.69-1.29-.82zM34.985-.04q-.46-.21-.65-.3t-.39-.09q-.2 0-.44.43h-.72v-3.86h.54q.17.18.3.49.14.32.29.68l.33.74q.18.39.44.72.58.72 1.47.82v.64q-.7-.07-1.17-.27zm1.82.27v-.65q.84-.1 1.3-.69.41-.52.41-1.2 0-.67-.24-1.08-.24-.41-.64-.73-.39-.32-.9-.58l-1.04-.51q-.52-.25-1.03-.53-.5-.28-.89-.64-.88-.81-.88-1.97 0-1.18.8-2.02.86-.87 2.23-.97v.65q-.97.13-1.31.99-.11.29-.11.71t.25.79q.25.36.66.65.41.29.92.53.52.25 1.07.5.54.25 1.06.54.52.28.93.67.9.86.9 2.09 0 1.33-.96 2.31-1.01 1.05-2.53 1.14zM48.72-1.84v-7.54q0-.57-.12-.74-.11-.17-.22-.22-.1-.04-.21-.08-.39-.11-.54-.22v-.46h4.1v.46q-.21.09-.4.15-.2.05-.34.14-.32.19-.32.69v8.22q0 .5.32.69.14.09.34.14.19.06.4.15V0h-4.1v-.46q.9-.13 1.04-.84.05-.23.05-.54zM44.67-9.3v7.53q0 .85.33 1.02.11.05.36.12.26.08.41.17V0h-4.1v-.46q.21-.09.4-.15.19-.05.34-.14.32-.19.32-.69v-8.22q0-.5-.32-.69-.15-.09-.34-.14-.19-.06-.4-.15v-.46h4.1v.46q-.18.12-.43.19t-.35.12q-.1.05-.17.17-.15.25-.15.86zm3.4 3.16v.72h-2.75v-.72h2.75zm9.538 5.73v.64q-2-.14-3.3-1.81-1.27-1.62-1.27-3.97 0-2.34 1.27-3.97 1.3-1.67 3.3-1.81v.64q-1.15.12-1.72 1.22-.65 1.27-.65 3.92 0 3.89 1.4 4.8.43.28.97.34zm.65.64v-.64q1.75-.18 2.2-2.79.18-.96.18-2.35 0-3.88-1.4-4.79-.44-.29-.98-.35v-.65q2.02.14 3.31 1.81 1.28 1.63 1.28 3.98 0 2.34-1.28 3.97-1.29 1.67-3.31 1.81zM70.691-8.2q0-2.32-2.15-2.32-.35 0-.61.05v-.63h.68q3.06 0 3.97 1.59.32.56.32 1.26t-.26 1.23q-.25.54-.76.94-1.09.86-3.05.86h-.9v-.58q1.42 0 2.07-.51.69-.57.69-1.89zm-3.41-2.9v9.24q0 .54.04.73.05.19.18.29.13.1.32.15.19.05.41.09.21.05.42.14V0h-4.42v-.46q.14-.09.3-.13.17-.04.33-.1.37-.11.42-.44.05-.32.05-.75v-7.35q0-.87-.21-1.04-.16-.13-.45-.2-.3-.08-.44-.17v-.46h3.05z"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-md-7">
+                        <form class="fsearch">
+                            <div class="fsearch__area">
+                                <input type="text" class="form-control"
+                                       placeholder="Nhập từ khóa sản phẩm cần tìm kiếm...">
+                                <button type="submit" class="fsearch__area--btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-search">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="d-flex justify-content-end">
+                            <a href="javascript:void(0)" class="badge mobile__action--cart" data-offcanvas>
+                                <div class="badge__count cart__count">2</div>
+
+                                <div class="cart__icon">
+                                <span class="cart__price">
+                                    12.000.000 đ -
+                                </span>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="feather feather-shopping-bag">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="javascript:void(0)" class="badge mobile__action--wishlist pl-24" data-offcanvas>
+                                <div class="badge__count cart__count">4</div>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-heart">
+                                    <path
+                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End:: Middle -->
+
+        <!-- Begin:: Nav -->
+        <nav class="nav">
+            <div class="container">
+                <div class="row nav__container d-flex align-items-center">
+                    <div class="col-md-3">
+                        <div class="nav__categories d-flex align-items-center justify-content-between">
+                            <div class="left">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-list">
+                                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                </svg>
+
+                                <span class="text-capitalize nav__categories--text">Danh mục sản phẩm</span>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                 stroke-linejoin="round" class="feather feather-chevron-up">
+                                <polyline points="18 15 12 9 6 15"></polyline>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9">
+                        <ul class="d-flex justify-content-start">
+                            <li class="nav__categories--item">
+                                <a href="index.html" class="nav__categories--link">
+                                    Trang chủ
+                                </a>
+                            </li>
+
+                            <li class="nav__categories--item">
+                                <a href="index.html" class="nav__categories--link">
+                                    Danh mục
+                                </a>
+                            </li>
+
+                            <li class="nav__categories--item">
+                                <a href="index.html" class="nav__categories--link">
+                                    Cửa hàng
+                                </a>
+                            </li>
+
+                            <li class="nav__categories--item">
+                                <a href="index.html" class="nav__categories--link">
+                                    Liên hệ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End:: Nav -->
+    </header>
+    <!--End:: Header -->
+
+    <!-- Begin:: Header Mobile -->
+    <header class="header d-lg-none">
+        <div class="mobile">
+            <div class="container">
+                <div class="row mobile__container d-flex align-items-center">
+                    <div class="col-md-3 col-6 d-flex">
+                        <div class="mobile__icon">
+                            <a href="javascript:void(0)" class="mobile__menu--btn" data-offcanvas>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none"
+                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round"
+                                     class="feather feather-align-left">
+                                    <line x1="17" y1="10" x2="3" y2="10"></line>
+                                    <line x1="21" y1="6" x2="3" y2="6"></line>
+                                    <line x1="21" y1="14" x2="3" y2="14"></line>
+                                    <line x1="17" y1="18" x2="3" y2="18"></line>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="mobile__logo">
+                            <a href="index.html">
+                                <svg viewBox="0.27 -11.34 72.631 11.57" height="20" class="fl-textpath"
+                                     xmlns="http://www.w3.org/2000/svg" width="120">
+                                    <path
+                                        d="M3.65-11.1H5.6v9.31q0 .62.13.79.14.18.25.23.11.05.25.08.4.1.61.23V0H2.45v-.46q.17-.11.44-.18.28-.08.4-.13.11-.04.19-.15.17-.24.17-.87v-9.31zm2.6 0h1.67q.32 0 1.07-.12v3.7h-.53q-.11-.3-.19-.63t-.18-.66q-.11-.32-.24-.62t-.34-.53q-.47-.5-1.26-.5v-.64zm-5.98-.1.01-.02q.38.12.57.12H3v.64q-1.12 0-1.59 1.04-.23.49-.36 1.05-.14.56-.24.85H.27v-3.68zm16.483 8.57L16.333-4l2.1-7.1h3.51v.46q-.19.09-.37.14-.19.05-.34.12-.33.18-.33.59v8.35q0 .49.34.67.15.09.34.15.2.07.42.16V0h-4.09v-.46q.19-.09.37-.16.19-.06.33-.15.34-.19.34-.67v-8.54h-.03l-2.17 7.35zm-5.73-6.93.89.33v7.57q0 .61.36.86.16.1.37.17t.42.17V0h-3.13v-.46q.18-.09.38-.15.19-.06.35-.17.36-.24.36-.87v-7.91zM15.043 0l-3.1-9.82q-1.65-.63-2.01-.82v-.46h3.52l2.99 9.49-.47 1.61h-.93zm13.639-5.35-.47-.84q1.51-2.95 1.62-3.23.14-.35.14-.53 0-.18-.1-.28-.11-.11-.26-.16-.15-.06-.34-.11-.19-.04-.35-.11v-.49h3.36v.49q-.13.09-.44.19t-.46.17q-.14.08-.35.39-.21.32-.52.89-.32.56-.62 1.17-.31.6-.61 1.23-.3.62-.6 1.22zm-.78-.24.45.88-.08.12v2.79q0 .88.42 1.05.13.05.27.08.43.11.58.21V0h-4.48v-.46q.17-.11.45-.17.28-.07.4-.12.13-.05.21-.17.2-.26.2-.92v-2.79l-2.71-5.19q-.23-.44-.88-.66-.15-.05-.3-.13v-.49h4.37v.49q-.19.08-.38.12-.2.04-.34.08-.35.12-.35.39 0 .21.24.68.25.47.49.94.23.46.59 1.15.35.69.85 1.66zm8.673-5.09v-.64q.57.05.98.27.41.21.57.29.15.09.25.09.11 0 .18-.05.07-.05.12-.11.06-.06.1-.13.04-.08.08-.14h.72v3.66h-.57q-.17-.18-.39-.78-.22-.61-.37-.97t-.38-.67q-.5-.69-1.29-.82zM34.985-.04q-.46-.21-.65-.3t-.39-.09q-.2 0-.44.43h-.72v-3.86h.54q.17.18.3.49.14.32.29.68l.33.74q.18.39.44.72.58.72 1.47.82v.64q-.7-.07-1.17-.27zm1.82.27v-.65q.84-.1 1.3-.69.41-.52.41-1.2 0-.67-.24-1.08-.24-.41-.64-.73-.39-.32-.9-.58l-1.04-.51q-.52-.25-1.03-.53-.5-.28-.89-.64-.88-.81-.88-1.97 0-1.18.8-2.02.86-.87 2.23-.97v.65q-.97.13-1.31.99-.11.29-.11.71t.25.79q.25.36.66.65.41.29.92.53.52.25 1.07.5.54.25 1.06.54.52.28.93.67.9.86.9 2.09 0 1.33-.96 2.31-1.01 1.05-2.53 1.14zM48.72-1.84v-7.54q0-.57-.12-.74-.11-.17-.22-.22-.1-.04-.21-.08-.39-.11-.54-.22v-.46h4.1v.46q-.21.09-.4.15-.2.05-.34.14-.32.19-.32.69v8.22q0 .5.32.69.14.09.34.14.19.06.4.15V0h-4.1v-.46q.9-.13 1.04-.84.05-.23.05-.54zM44.67-9.3v7.53q0 .85.33 1.02.11.05.36.12.26.08.41.17V0h-4.1v-.46q.21-.09.4-.15.19-.05.34-.14.32-.19.32-.69v-8.22q0-.5-.32-.69-.15-.09-.34-.14-.19-.06-.4-.15v-.46h4.1v.46q-.18.12-.43.19t-.35.12q-.1.05-.17.17-.15.25-.15.86zm3.4 3.16v.72h-2.75v-.72h2.75zm9.538 5.73v.64q-2-.14-3.3-1.81-1.27-1.62-1.27-3.97 0-2.34 1.27-3.97 1.3-1.67 3.3-1.81v.64q-1.15.12-1.72 1.22-.65 1.27-.65 3.92 0 3.89 1.4 4.8.43.28.97.34zm.65.64v-.64q1.75-.18 2.2-2.79.18-.96.18-2.35 0-3.88-1.4-4.79-.44-.29-.98-.35v-.65q2.02.14 3.31 1.81 1.28 1.63 1.28 3.98 0 2.34-1.28 3.97-1.29 1.67-3.31 1.81zM70.691-8.2q0-2.32-2.15-2.32-.35 0-.61.05v-.63h.68q3.06 0 3.97 1.59.32.56.32 1.26t-.26 1.23q-.25.54-.76.94-1.09.86-3.05.86h-.9v-.58q1.42 0 2.07-.51.69-.57.69-1.89zm-3.41-2.9v9.24q0 .54.04.73.05.19.18.29.13.1.32.15.19.05.41.09.21.05.42.14V0h-4.42v-.46q.14-.09.3-.13.17-.04.33-.1.37-.11.42-.44.05-.32.05-.75v-7.35q0-.87-.21-1.04-.16-.13-.45-.2-.3-.08-.44-.17v-.46h3.05z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 d-md-block d-none">
+                        <form class="mobile__search">
+                            <input type="text" class="form-control"
+                                   placeholder="Nhập từ khóa sản phẩm cần tìm kiếm...">
+                            <button type="submit" class="mobile__search--btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round" class="feather feather-search">
+                                    <circle cx="11" cy="11" r="8"></circle>
+                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-2 col-6">
+                        <div class="mobile__action d-flex justify-content-end align-items-center">
+                            <div class="mobile__action--item mobile__action--search d-md-none" data-offcanvas>
+                                <a href="javascript:void(0)" class="mobile__action--link">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                         fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round" class="feather feather-search">
+                                        <circle cx="11" cy="11" r="8"></circle>
+                                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="mobile__action--item mobile__action--cart" data-offcanvas>
+                                <a href="javascript:void(0)" class="badge mobile__action--link">
+                                    <div class="badge__count cart__count">2</div>
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                         fill="none"
+                                         stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                         stroke-linejoin="round"
+                                         class="feather feather-shopping-bag">
+                                        <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                                        <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--End:: Header Mobile -->
+
+    <!-- Begin:: Content -->
+    <main class="main__content--wrapper">
+        <!-- Begin:: Swiper Slider -->
+        <section class="slider">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 d-lg-block d-none">
+                        <ul class="text-capitalize categories scrollbar">
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nam
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nam
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nam
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nam
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nam
+                                </a>
+                            </li>
+
+                            <li class="categories__item">
+                                <a href="categories.html"
+                                   class="categories__link">
+                                    Thời trang nữ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-9">
+                        <div
+                            class="swiffy-slider slider-item-reveal slider-nav-round slider-item-ratio slider-indicators-round slider-indicators-highlight slider-nav-sm slider-nav-mousedrag">
+                            <ul class="slider-container">
+                                <li>
+                                    <img src="https://via.placeholder.com/840x395.png/277da1" loading="lazy"
+                                         alt="Slider 1"
+                                         title="Slider 1"
+                                         class="img-fluid"
+                                         width="840"
+                                         height="395">
+                                </li>
+
+                                <li>
+                                    <img src="https://via.placeholder.com/840x395.png/004455" loading="lazy"
+                                         alt="Slider 2"
+                                         title="Slider 2"
+                                         class="img-fluid"
+                                         width="840"
+                                         height="395">
+                                </li>
+
+                                <li>
+                                    <img src="https://via.placeholder.com/840x395.png/577590" loading="lazy"
+                                         alt="Slider 3"
+                                         title="Slider 3"
+                                         class="img-fluid"
+                                         width="840"
+                                         height="395">
+                                </li>
+                            </ul>
+
+                            <button type="button" class="slider-nav"></button>
+                            <button type="button" class="slider-nav slider-nav-next"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End:: Swiper Slider -->
+
+        <!-- Begin:: Product Card -->
+        <section class="product__section mt-70" style="margin-bottom: 100px">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="section__title text-capitalize text-center">
+                            <span>Sản phẩm mới nhất</span>
+                        </h2>
+                    </div>
+
+                    <div class="col-lg-3 col-md-4 col-6">
+                        <div class="product__items">
+                            <div class="product__items--thumbnail">
+                                <a href="detail.html">
+                                    <img src="https://via.placeholder.com/280x310.png/277da1" loading="lazy"
+                                         alt="Product"
+                                         title="Product"
+                                         class="img-fluid w-100"
+                                         width="280"
+                                         height="310">
+                                </a>
+
+                                <div class="product__items--action">
+                                    <a href="javascript:void(0)"
+                                       class="product__items--action__item product-tooltip d-flex justify-content-center align-items-center"
+                                       title="THÊM GIỎ HÀNG">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 24 24"
+                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                             stroke-linejoin="round" class="feather feather-shopping-bag">
+                                            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                                            <path d="M16 10a4 4 0 0 1-8 0"></path>
+                                        </svg>
+                                    </a>
+
+                                    <a href="javascript:void(0)"
+                                       class="product__items--action__item product-tooltip d-flex justify-content-center align-items-center"
+                                       title="XEM NHANH">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 24 24"
+                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                             stroke-linejoin="round" class="feather feather-eye">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                        </svg>
+                                    </a>
+
+                                    <a href="javascript:void(0)"
+                                       class="product__items--action__item product-tooltip d-flex justify-content-center align-items-center"
+                                       title="YÊU THÍCH">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             viewBox="0 0 24 24"
+                                             fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                             stroke-linejoin="round" class="feather feather-heart">
+                                            <path
+                                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="text-truncate mt-3">
+                                <small class="product__items--categories text-small text-capitalize">
+                                    Danh Mục: Thời trang nam Thời trang nam
+                                </small>
+                            </div>
+
+                            <a href="detail.html" class="product-tooltip"
+                               title="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,">
+                                <h4 class="product__items--title text-capitalize text-truncate-2-lines">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s,
+                                </h4>
+                            </a>
+
+                            <div class="product__items--price">
+                                <span class="product__items--price__new">20.000.000đ</span>
+                                <span class="product__items--price__old">10.000.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End:: Product Card -->
+    </main>
+    <!--End:: Content -->
+
+    <!-- Begin:: Search -->
+    <section class="search" id="search">
+        <form class="search__area">
+            <input type="text" class="form-control" placeholder="Nhập từ khóa sản phẩm cần tìm kiếm...">
+            <button type="submit" class="search__area--btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round" class="feather feather-search">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+
+            <button type="button" class="search__area--close" data-offcanvas>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </form>
+    </section>
+    <!-- End:: Search -->
+
+    <!-- Begin:: Offcanvas Menu -->
+    <section class="offcanvas offcanvas__menu">
+        <!-- Begin:: Offcanvas Header -->
+        <div class="offcanvas__header d-flex justify-content-between align-items-center">
+            <h5 class="offcanvas__header--title mb-0">Menu</h5>
+            <button type="button" href="javascript:void(0)" class="offcanvas__header--close"
+                    data-offcanvas>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <!-- End:: Offcanvas Header -->
+
+        <!-- Begin:: Offcanvas Content -->
+        <ul class="offcanvas__content">
+            <li class="offcanvas__menu--item">
+                <a href="index.html" class="offcanvas__menu--link text-capitalize">
+                    Trang chủ
+                </a>
+            </li>
+
+            <li class="offcanvas__menu--item">
+                <a href="categories.html" class="offcanvas__menu--link text-capitalize">
+                    Danh mục
+                </a>
+            </li>
+
+            <li class="offcanvas__menu--item">
+                <a href="cart.html" class="offcanvas__menu--link text-capitalize">
+                    Cửa hàng
+                </a>
+            </li>
+
+            <li class="offcanvas__menu--item">
+                <a href="contact.html" class="offcanvas__menu--link text-capitalize">
+                    Liên hệ
+                </a>
+            </li>
+        </ul>
+        <!-- End:: Offcanvas Content -->
+    </section>
+    <!-- End:: Offcanvas Menu -->
+
+    <!-- Begin:: Offcanvas Cart -->
+    <section class="offcanvas offcanvas__cart">
+        <!-- Begin:: Offcanvas Header -->
+        <div class="offcanvas__header d-flex justify-content-between align-items-center">
+            <h5 class="offcanvas__header--title text-capitalize mb-0">Giỏ hàng Mini</h5>
+            <button type="button" href="javascript:void(0)" class="offcanvas__header--close"
+                    data-offcanvas>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-x">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+        <!-- End:: Offcanvas Header -->
+
+        <!-- Begin:: Offcanvas Content -->
+        <ul class="offcanvas__content">
+            <li class="offcanvas__cart--item d-flex">
+                <div class="offcanvas__cart--img">
+                    <a href="detail.html">
+                        <img src="https://via.placeholder.com/280x310.png/277da1" loading="lazy"
+                             alt="Slider 1"
+                             title="Slider 1"
+                             class="img-fluid"
+                             width="280"
+                             height="310">
+                    </a>
+                </div>
+
+                <div class="offcanvas__cart--info">
+                    <a href="detail.html">
+                        <h5 class="title text-capitalize text-truncate-2-lines mb-0">Sản phẩm thời trang nam giỏ hàng 1
+                            Sản phẩm thời trang nam giỏ hàng 1 </h5>
+                    </a>
+
+                    <small class="text-small text-capitalize">Thời trang nam</small>
+                    <div class="price">
+                        <span class="price__quantity">2</span> x <span class="price__result">700.000đ</span>
+                    </div>
+                </div>
+
+                <div class="offcanvas__cart--close">
+                    <a href="javascript:void(0)" class="cart-delete-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+
+            <li class="offcanvas__cart--item d-flex">
+                <div class="offcanvas__cart--img">
+                    <a href="detail.html">
+                        <img src="https://via.placeholder.com/280x310.png/277da1" loading="lazy"
+                             alt="Slider 1"
+                             title="Slider 1"
+                             class="img-fluid"
+                             width="280"
+                             height="310">
+                    </a>
+                </div>
+
+                <div class="offcanvas__cart--info">
+                    <a href="detail.html">
+                        <h5 class="title text-capitalize text-truncate-2-lines mb-0">Sản phẩm thời trang nam giỏ hàng 1
+                            Sản phẩm thời trang nam giỏ hàng 1 </h5>
+                    </a>
+
+                    <small class="text-small text-capitalize">Thời trang nam</small>
+                    <div class="price">
+                        <span class="price__quantity">2</span> x <span class="price__result">700.000đ</span>
+                    </div>
+                </div>
+
+                <div class="offcanvas__cart--close">
+                    <a href="javascript:void(0)" class="cart-delete-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+
+            <li class="offcanvas__cart--item d-flex">
+                <div class="offcanvas__cart--img">
+                    <a href="detail.html">
+                        <img src="https://via.placeholder.com/280x310.png/277da1" loading="lazy"
+                             alt="Slider 1"
+                             title="Slider 1"
+                             class="img-fluid"
+                             width="280"
+                             height="310">
+                    </a>
+                </div>
+
+                <div class="offcanvas__cart--info">
+                    <a href="detail.html">
+                        <h5 class="title text-capitalize text-truncate-2-lines mb-0">Sản phẩm thời trang nam giỏ hàng 1
+                            Sản phẩm thời trang nam giỏ hàng 1 </h5>
+                    </a>
+
+                    <small class="text-small text-capitalize">Thời trang nam</small>
+                    <div class="price">
+                        <span class="price__quantity">2</span> x <span class="price__result">700.000đ</span>
+                    </div>
+                </div>
+
+                <div class="offcanvas__cart--close">
+                    <a href="javascript:void(0)" class="cart-delete-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                             class="feather feather-x">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <!-- End:: Offcanvas Content -->
+
+        <!-- End:: Offcanvas Footer -->
+        <div class="offcanvas__cart--footer">
+            <div class="price">
+                <ul>
+                    <li class="d-flex justify-content-between price__item">
+                        <strong>Tổng Cộng</strong>
+                        <span>20.000.000đ</span>
+                    </li>
+
+                    <li class="d-flex justify-content-between price__item">
+                        <strong>Thuế</strong>
+                        <span>10%</span>
+                    </li>
+
+                    <li class="d-flex justify-content-between price__item">
+                        <strong>Thành Tiền</strong>
+                        <span>30.000.000đ</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="action">
+                <a href="cart.html" class="action__cart text-capitalize action__item btn">
+                    Xem giỏ hàng
+                </a>
+
+                <a href="checkout.html" class="action__checkout text-capitalize action__item btn">
+                    Thanh toán
+                </a>
+            </div>
+        </div>
+        <!-- End:: Offcanvas Footer -->
+    </section>
+    <!-- End:: Offcanvas Cart -->
+
+    <!-- Begin:: Overplay -->
+    <section class="overplay"></section>
+    <!-- End:: Overplay -->
+
+    <!-- Begin:: Script JS -->
+    <script src="js/plugins.min.js"></script>
     <script src="js/scripts.js"></script>
+    <!-- End:: Script JS -->
 </body>
 </html>

@@ -1,0 +1,109 @@
+.product__section {
+    .section__title {
+        position: relative;
+        z-index: 1;
+        font-size: 1.5em;
+        font-weight: 600;
+        letter-spacing: .01em;
+
+        &:before {
+            border-top: 2px solid $bg-hover;
+            content: "";
+            margin: 0 auto;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        span {
+            background: $bg-white;
+            padding: 0 25px;
+        }
+    }
+
+    .product__items {
+        margin-top: 25px;
+        position: relative;
+
+        &--title {
+            margin: 7px 0;
+            font-size: 15px;
+            line-height: 19px;
+            height: 40px;
+            font-weight: 600;
+
+            &:hover {
+                color: #1a66ff;
+            }
+        }
+
+        &--thumbnail {
+            position: relative;
+        }
+
+        &--action {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+
+            &__item {
+                color: $color-grey2;
+                background-color: $bg-white;
+                width: 35px;
+                height: 35px;
+                padding: 0;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+        }
+
+        &--badge {
+            &__hot {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                background-color: $bg-purple;
+                font-size: 11px;
+                letter-spacing: .02em;
+                line-height: 1;
+                padding: 5px 8px 4px;
+                margin: 0 4px 4px 0;
+                color: $color-white;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+
+            &__sale {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background-color: $bg-red;
+                font-size: 11px;
+                letter-spacing: .02em;
+                line-height: 1;
+                padding: 5px 8px 4px;
+                margin: 0 4px 4px 0;
+                color: $color-white;
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+            }
+        }
+
+        &--price {
+            line-height: 1;
+            font-weight: 700;
+            color: $color-grey2;
+
+            &__old {
+                color: #b3b3b3;
+                font-weight: 400;
+                font-size: 13px;
+                text-decoration: line-through;
+            }
+        }
+    }
+}
