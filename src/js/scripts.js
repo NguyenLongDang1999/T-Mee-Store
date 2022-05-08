@@ -77,14 +77,18 @@ const resizeRemoveClass = function (outerWidth, WrapperSidebar, wrapperOverlay) 
 
 // Tooltip
 new Drooltip({
-    "element": ".product-tooltip",
-    "position": "bottom",
-    "background": "#000",
-    "color": "#fff"
+    "element": ".product-tooltip", "position": "bottom", "background": "#000", "color": "#fff"
 });
+
+// Gallery Thumb
+const thumbClick = function (imageNumber) {
+    const sliderElement = document.getElementById('pgallery');
+    swiffyslider.slideTo(sliderElement, imageNumber)
+}
 
 activeClassAction(".topbar__dropdown--item", ".topbar__dropdown--menu");
 
 offcanvsSidebar(".mobile__menu--btn", ".offcanvas__header--close", ".offcanvas__menu");
 offcanvsSidebar(".mobile__action--cart", ".offcanvas__header--close", ".offcanvas__cart");
 offcanvsSidebar(".mobile__action--search", ".search__area--close", "#search");
+offcanvsSidebar(".product__items--action__quickview", ".offcanvas__header--close", ".modal");

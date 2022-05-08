@@ -219,7 +219,6 @@
     border: 0;
     background-color: transparent;
     cursor: pointer;
-    padding: 0;
     visibility: hidden;
     opacity: .8;
     transition: visibility .1s, opacity .2s linear;
@@ -388,7 +387,7 @@
 }
 
 .slider-item-show4 {
-    --swiffy-slider-item-count: 4
+    --swiffy-slider-item-count: 4 !important
 }
 
 .slider-item-show5 {
@@ -508,7 +507,7 @@
         --swiffy-slider-track-height: 0rem;
         --swiffy-slider-item-reveal: 0rem;
         --swiffy-slider-item-count: 1;
-        --swiffy-slider-nav-zoom: .875
+        --swiffy-slider-nav-zoom: .875;
     }
     .slider-item-reveal {
         --swiffy-slider-item-reveal: 4rem

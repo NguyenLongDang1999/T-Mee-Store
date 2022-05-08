@@ -1,0 +1,50 @@
+.modal {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 25px;
+    z-index: 21;
+    opacity: 0;
+    left: 50%;
+    visibility: hidden;
+    transform: scale(0);
+    transition: $transition;
+
+    &.active {
+        opacity: 1;
+        visibility: visible;
+        transform: scale(1) translateX(-50%);
+    }
+
+    &__header {
+        top: 10px;
+        right: 10px;
+    }
+
+    &__content {
+        margin-top: 1em;
+
+        &--title {
+            font-size: 22px;
+        }
+
+        &--description {
+            border-bottom: 1px dotted #939393;
+            padding-bottom: 15px;
+        }
+
+        &--price {
+            margin: 15px 0;
+
+            &__old {
+                color: #b3b3b3;
+                font-size: 13px;
+            }
+
+            &__new {
+                font-size: 1.3em;
+                line-height: 1;
+                color: #3d464d;
+            }
+        }
+    }
+}

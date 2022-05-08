@@ -10,7 +10,6 @@
         &__dropdown {
             &--item {
                 padding: 0 10px;
-                position: relative;
                 cursor: pointer;
                 transition: $transition;
 
@@ -24,12 +23,9 @@
                 width: 12em;
                 min-width: 12em;
                 box-shadow: 0 1px 7px rgb(0 0 0 / 25%);
-                background-color: $bg-white;
                 cursor: pointer;
                 padding: 6px 0;
-                position: absolute;
                 z-index: 10;
-                right: 0;
                 opacity: 0;
                 visibility: hidden;
                 transform-origin: top;
@@ -68,10 +64,7 @@
 
             .fsearch {
                 &__area {
-                    position: relative;
-
                     &--btn {
-                        position: absolute;
                         top: 50%;
                         right: 10px;
                         transform: translateY(-50%);
@@ -86,8 +79,6 @@
 
     .nav {
         color: $color-grey2;
-        font-weight: 400;
-        background-color: $bg-main;
 
         &__container {
             height: 54px;
@@ -100,7 +91,6 @@
             padding: 10px 16px;
             background-color: $color-grey2;
             color: $color-white;
-            text-transform: capitalize;
 
             &--text {
                 padding-left: 7px;
@@ -111,7 +101,6 @@
                 letter-spacing: .02em;
                 cursor: pointer;
                 font-weight: 500;
-                text-transform: capitalize;
                 font-size: 0.875em;
 
                 &:hover {
@@ -124,8 +113,6 @@
     // End:: Nav
 
     .mobile {
-        background-color: $bg-main;
-
         &__container {
             height: 54px;
         }
@@ -135,14 +122,11 @@
         }
 
         &__search {
-            position: relative;
-
             .form-control {
                 height: 33px;
             }
 
             &--btn {
-                position: absolute;
                 top: 50%;
                 right: 10px;
                 transform: translateY(-50%);
