@@ -1,0 +1,16 @@
+.section-menu {
+    left: -25em;
+    z-index: 100;
+    transition: $transition;
+
+    &.active {
+        left: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        width: 21.875em;
+        padding: 1.25em;
+    }
+}

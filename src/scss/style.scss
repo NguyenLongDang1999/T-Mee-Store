@@ -6,8 +6,10 @@
 @import "./general";
 
 // Components
+@import "./components/menu";
 @import "./components/minicart";
 @import "./components/search";
 
 // Layouts
 @import "./layouts/header";
+@import "./layouts/main";

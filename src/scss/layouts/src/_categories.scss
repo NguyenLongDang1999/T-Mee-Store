@@ -1,0 +1,27 @@
+.categories {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.25em;
+    }
+
+    &__content {
+        left: 1.25em;
+        bottom: 1.25em;
+
+        &--title {
+            font-size: 1.5em;
+            margin-bottom: 0.625em;
+        }
+
+        &--btn {
+            padding: 0.625em 1.875em;
+            font-size: 1em;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}

@@ -17,7 +17,7 @@
     <header class="header d-flex align-items-center">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="three columns">
+                <div class="three columns d-md-none">
                     <a href="index.html">
                         <svg viewBox="0.27 -11.34 72.631 11.57" height="24" class="fl-textpath"
                             xmlns="http://www.w3.org/2000/svg" width="90">
@@ -27,7 +27,7 @@
                     </a>
                 </div>
 
-                <div class="six columns">
+                <div class="six columns d-md-none">
                     <ul class="header__nav d-flex justify-content-center">
                         <li class="header__nav--item">
                             <a href="index.html" class="text-uppercase d-block header__nav--link">Trang chủ</a>
@@ -47,10 +47,32 @@
                     </ul>
                 </div>
 
+                <div class="nine columns d-none d-md-block ml-0">
+                    <a href="javascript:void(0)" class="header__menu" aria-label="Menu" data-microtip-position="bottom"
+                        data-bs-toggle="tooltip" data-offcanvas>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-align-justify">
+                            <line x1="21" y1="10" x2="3" y2="10"></line>
+                            <line x1="21" y1="6" x2="3" y2="6"></line>
+                            <line x1="21" y1="14" x2="3" y2="14"></line>
+                            <line x1="21" y1="18" x2="3" y2="18"></line>
+                        </svg>
+                    </a>
+
+                    <a href="index.html" class="pl-16">
+                        <svg viewBox="0.27 -11.34 72.631 11.57" height="24" class="fl-textpath"
+                            xmlns="http://www.w3.org/2000/svg" width="90">
+                            <path
+                                d="M3.65-11.1H5.6v9.31q0 .62.13.79.14.18.25.23.11.05.25.08.4.1.61.23V0H2.45v-.46q.17-.11.44-.18.28-.08.4-.13.11-.04.19-.15.17-.24.17-.87v-9.31zm2.6 0h1.67q.32 0 1.07-.12v3.7h-.53q-.11-.3-.19-.63t-.18-.66q-.11-.32-.24-.62t-.34-.53q-.47-.5-1.26-.5v-.64zm-5.98-.1.01-.02q.38.12.57.12H3v.64q-1.12 0-1.59 1.04-.23.49-.36 1.05-.14.56-.24.85H.27v-3.68zm16.483 8.57L16.333-4l2.1-7.1h3.51v.46q-.19.09-.37.14-.19.05-.34.12-.33.18-.33.59v8.35q0 .49.34.67.15.09.34.15.2.07.42.16V0h-4.09v-.46q.19-.09.37-.16.19-.06.33-.15.34-.19.34-.67v-8.54h-.03l-2.17 7.35zm-5.73-6.93.89.33v7.57q0 .61.36.86.16.1.37.17t.42.17V0h-3.13v-.46q.18-.09.38-.15.19-.06.35-.17.36-.24.36-.87v-7.91zM15.043 0l-3.1-9.82q-1.65-.63-2.01-.82v-.46h3.52l2.99 9.49-.47 1.61h-.93zm13.639-5.35-.47-.84q1.51-2.95 1.62-3.23.14-.35.14-.53 0-.18-.1-.28-.11-.11-.26-.16-.15-.06-.34-.11-.19-.04-.35-.11v-.49h3.36v.49q-.13.09-.44.19t-.46.17q-.14.08-.35.39-.21.32-.52.89-.32.56-.62 1.17-.31.6-.61 1.23-.3.62-.6 1.22zm-.78-.24.45.88-.08.12v2.79q0 .88.42 1.05.13.05.27.08.43.11.58.21V0h-4.48v-.46q.17-.11.45-.17.28-.07.4-.12.13-.05.21-.17.2-.26.2-.92v-2.79l-2.71-5.19q-.23-.44-.88-.66-.15-.05-.3-.13v-.49h4.37v.49q-.19.08-.38.12-.2.04-.34.08-.35.12-.35.39 0 .21.24.68.25.47.49.94.23.46.59 1.15.35.69.85 1.66zm8.673-5.09v-.64q.57.05.98.27.41.21.57.29.15.09.25.09.11 0 .18-.05.07-.05.12-.11.06-.06.1-.13.04-.08.08-.14h.72v3.66h-.57q-.17-.18-.39-.78-.22-.61-.37-.97t-.38-.67q-.5-.69-1.29-.82zM34.985-.04q-.46-.21-.65-.3t-.39-.09q-.2 0-.44.43h-.72v-3.86h.54q.17.18.3.49.14.32.29.68l.33.74q.18.39.44.72.58.72 1.47.82v.64q-.7-.07-1.17-.27zm1.82.27v-.65q.84-.1 1.3-.69.41-.52.41-1.2 0-.67-.24-1.08-.24-.41-.64-.73-.39-.32-.9-.58l-1.04-.51q-.52-.25-1.03-.53-.5-.28-.89-.64-.88-.81-.88-1.97 0-1.18.8-2.02.86-.87 2.23-.97v.65q-.97.13-1.31.99-.11.29-.11.71t.25.79q.25.36.66.65.41.29.92.53.52.25 1.07.5.54.25 1.06.54.52.28.93.67.9.86.9 2.09 0 1.33-.96 2.31-1.01 1.05-2.53 1.14zM48.72-1.84v-7.54q0-.57-.12-.74-.11-.17-.22-.22-.1-.04-.21-.08-.39-.11-.54-.22v-.46h4.1v.46q-.21.09-.4.15-.2.05-.34.14-.32.19-.32.69v8.22q0 .5.32.69.14.09.34.14.19.06.4.15V0h-4.1v-.46q.9-.13 1.04-.84.05-.23.05-.54zM44.67-9.3v7.53q0 .85.33 1.02.11.05.36.12.26.08.41.17V0h-4.1v-.46q.21-.09.4-.15.19-.05.34-.14.32-.19.32-.69v-8.22q0-.5-.32-.69-.15-.09-.34-.14-.19-.06-.4-.15v-.46h4.1v.46q-.18.12-.43.19t-.35.12q-.1.05-.17.17-.15.25-.15.86zm3.4 3.16v.72h-2.75v-.72h2.75zm9.538 5.73v.64q-2-.14-3.3-1.81-1.27-1.62-1.27-3.97 0-2.34 1.27-3.97 1.3-1.67 3.3-1.81v.64q-1.15.12-1.72 1.22-.65 1.27-.65 3.92 0 3.89 1.4 4.8.43.28.97.34zm.65.64v-.64q1.75-.18 2.2-2.79.18-.96.18-2.35 0-3.88-1.4-4.79-.44-.29-.98-.35v-.65q2.02.14 3.31 1.81 1.28 1.63 1.28 3.98 0 2.34-1.28 3.97-1.29 1.67-3.31 1.81zM70.691-8.2q0-2.32-2.15-2.32-.35 0-.61.05v-.63h.68q3.06 0 3.97 1.59.32.56.32 1.26t-.26 1.23q-.25.54-.76.94-1.09.86-3.05.86h-.9v-.58q1.42 0 2.07-.51.69-.57.69-1.89zm-3.41-2.9v9.24q0 .54.04.73.05.19.18.29.13.1.32.15.19.05.41.09.21.05.42.14V0h-4.42v-.46q.14-.09.3-.13.17-.04.33-.1.37-.11.42-.44.05-.32.05-.75v-7.35q0-.87-.21-1.04-.16-.13-.45-.2-.3-.08-.44-.17v-.46h3.05z" />
+                        </svg>
+                    </a>
+                </div>
+
                 <div class="three columns">
                     <ul class="header__icon d-flex justify-content-end">
-                        <li class="header__icon--item header__icon--search" aria-label="Tìm Kiếm" data-microtip-position="bottom"
-                            data-bs-toggle="tooltip" data-offcanvas>
+                        <li class="header__icon--item header__icon--search" aria-label="Tìm Kiếm"
+                            data-microtip-position="bottom" data-bs-toggle="tooltip" data-offcanvas>
                             <a href="javascript:void(0);" class="header__icon--link">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -148,6 +170,154 @@
             </div>
         </section>
         <!-- End:: Slideshow -->
+
+        <!-- Begin:: Categories -->
+        <section class="categories mt-50">
+            <div class="container">
+                <div class="row">
+                <div class="twelve column">
+                    <div class="categories__grid">
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="categories__grid--items">
+                            <a href="categories.html">
+                                <div class="categories__img position-relative">
+                                    <img data-src="https://via.placeholder.com/560x650.png/b0d1b7" title="Categories"
+                                        alt="Categories" class="lazy w-100" />
+
+                                    <div class="categories__content position-absolute">
+                                        <h3 class="categories__content--title text-capitalize text-white fw-500">Danh
+                                            mục</h3>
+                                        <a href="categories.html"
+                                            class="text-uppercase categories__content--btn bg-white d-block">Xem
+                                            ngay</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <!-- End:: Categories -->
     </main>
     <!-- End:: Main Content -->
 
@@ -174,7 +344,7 @@
                 <ul>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -204,7 +374,7 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -234,7 +404,7 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -264,7 +434,7 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -294,7 +464,7 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -324,7 +494,7 @@
                     </li>
                     <li class="d-flex justify-content-center align-items-center border-bottom-grey pt-16 pb-16">
                         <a href="detail.html" class="minicart__content--image">
-                            <img data-src="https://via.placeholder.com/600x600.png/77fc03" title="Product" alt="Product"
+                            <img data-src="https://via.placeholder.com/560x650.png/77fc03" title="Product" alt="Product"
                                 class="lazy" />
                         </a>
 
@@ -375,6 +545,57 @@
         </div>
     </section>
     <!-- End:: Minicart -->
+
+    <!-- Begin:: Menu Mobile -->
+    <section class="section-menu position-fixed top-0 h-100 bg-white opacity-0 visibility-hidden">
+        <div class="menu">
+            <!-- Begin:: Menu Header -->
+            <div class="menu__header d-flex justify-content-between align-items-center border-bottom-grey pb-16">
+                <h4 class="text-uppercase fs-16 fw-500">Menu</h4>
+                <a href="javascript:void(0);" aria-label="Đóng" data-microtip-position="left" data-bs-toggle="tooltip"
+                    data-offcanvas class="menu__header--close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="feather feather-x">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </a>
+            </div>
+            <!-- End:: Menu Header -->
+
+            <!-- Begin:: Menu Content -->
+            <div class="menu__content">
+                <ul>
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="index.html" class="text-uppercase d-block">Trang chủ</a>
+                    </li>
+
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="categories.html" class="text-uppercase d-block">Danh mục</a>
+                    </li>
+
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="shop.html" class="text-uppercase d-block">SHOP</a>
+                    </li>
+
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="contact.html" class="text-uppercase d-block">Liên hệ</a>
+                    </li>
+
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="login.html" class="text-uppercase d-block">Đăng nhập</a>
+                    </li>
+
+                    <li class="pt-16 menu__content--items border-bottom-grey pb-16">
+                        <a href="register.html" class="text-uppercase d-block">Đăng ký</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End:: Menu Content -->
+        </div>
+    </section>
+    <!-- End:: Menu Mobile -->
 
     <!-- Begin:: Search -->
     <section class="section-search position-fixed w-100 bg-white opacity-0 visibility-hidden">

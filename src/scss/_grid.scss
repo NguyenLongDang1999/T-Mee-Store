@@ -5,6 +5,7 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 .column,
 .columns {
@@ -304,8 +305,26 @@ hr {
     border-top: 1px solid #e1e1e1;
 }
 
-@media (min-width: 1200px) {
-    .container {
-        width: 100%;
+@media (max-width: 992px) {
+    .d-md-none {
+        display: none !important;
+    }
+
+    .d-md-block {
+        display: block !important;
+    }
+
+    .categories {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .categories {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
     }
 }
