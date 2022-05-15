@@ -1,0 +1,52 @@
+.section-minicart {
+    right: -25em;
+    z-index: 100;
+    transition: $transition;
+
+    &.active {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .minicart {
+        width: 25em;
+        padding: 1.25em;
+        overflow-x: hidden;
+        overflow-y: auto;
+
+        &__content {
+            padding: 0.625em 1.25em;
+            overflow: hidden auto;
+            height: calc(100% - 18.75em);
+
+            &--image {
+                max-width: 25%;
+                flex: 1;
+            }
+
+            &--items {
+                width: 75%;
+                flex: 1;
+                padding: 0 0.625em;
+
+                .title {
+                    max-height: 2.75em;
+                }
+            }
+        }
+
+        &__footer {
+            &--total {
+                padding: 0.625em 1.25em;
+            }
+
+            &--action {
+                padding: 0.625em 1.25em;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 10px;
+            }
+        }
+    }
+}

@@ -1,10 +1,13 @@
-@import './variables';
-@import './root';
-@import './reset';
-@import './grid';
+@import "./variables";
 
-@import './components/header';
-@import './components/search';
-@import './components/offcanvas';
+// Main
+@import "./reset";
+@import "./grid";
+@import "./general";
 
-@import './components/main';
+// Components
+@import "./components/minicart";
+@import "./components/search";
+
+// Layouts
+@import "./layouts/header";

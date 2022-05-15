@@ -35,7 +35,7 @@ const scssTasks = callback => {
             sourcemaps: true
         }))
         .pipe(autoprefixer('last 2 version'))
-        .pipe(cssmin())
+        .pipe(cssmin({ zindex: false, autoprefixer: false }))
         .pipe(
             dest(buildDir.scss, {
                 sourcemaps: true
