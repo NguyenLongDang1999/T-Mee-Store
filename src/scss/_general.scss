@@ -80,7 +80,7 @@ a:focus {
     &-truncate-2lines {
         display: -webkit-box;
         -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;  
+        -webkit-box-orient: vertical;
         text-overflow: ellipsis;
     }
 
@@ -271,6 +271,10 @@ a:focus {
     &-50 {
         margin-top: 3.125em;
     }
+
+    &-100 {
+        margin-top: 6.25em;
+    }
 }
 
 .fs-16 {
@@ -291,6 +295,12 @@ a:focus {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.grid--4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.25em;
 }
 
 .dropdown {
@@ -316,6 +326,14 @@ a:focus {
     }
 }
 
+.section {
+    &__header {
+        &--title {
+            font-size: 3em;
+        }
+    }
+}
+
 .overplay {
     z-index: 20;
     height: 100vh;
@@ -323,7 +341,7 @@ a:focus {
     transition: $transition;
 
     &.active {
-        opacity: .5;
+        opacity: 0.5;
         visibility: visible;
     }
 }

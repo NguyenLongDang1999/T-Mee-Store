@@ -1,0 +1,32 @@
+.product {
+    &__title {
+        font-size: 1.25em;
+        height: 42px;
+    }
+
+    &__price {
+        &--buy {
+            padding-left: 0.625em;
+            color: #e95144;
+        }
+    }
+
+    &__action {
+        bottom: 1em;
+        left: 1em;
+
+        &--link {
+            margin-bottom: 6px;
+            height: 2.0625em;
+            width: 2.0625em;
+            line-height: 2em;
+            text-align: center;
+            border: 2px solid transparent;
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+    }
+}
