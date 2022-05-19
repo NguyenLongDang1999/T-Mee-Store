@@ -319,10 +319,36 @@ hr {
             grid-template-columns: repeat(3, 1fr) !important;
         }
     }
+
+    .product {
+        &__grid {
+            grid-template-columns: repeat(4, 1fr) !important;
+        }
+    }
 }
 
 @media (max-width: 768px) {
     .categories {
+        &__grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+        }
+    }
+
+    .product {
+        &__grid {
+            grid-template-columns: repeat(3, 1fr) !important;
+        }
+
+        &__action {
+            left: 1em !important;
+            opacity: 1 !important;
+            visibility: visible !important;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .product {
         &__grid {
             grid-template-columns: repeat(2, 1fr) !important;
         }

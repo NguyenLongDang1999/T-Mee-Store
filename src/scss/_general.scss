@@ -235,6 +235,14 @@ a:focus {
     &-black {
         background-color: $black;
     }
+
+    &-red {
+        background-color: $red;
+    }
+
+    &-blue {
+        background-color: $blue;
+    }
 }
 
 .pr {
@@ -297,10 +305,18 @@ a:focus {
     overflow: hidden;
 }
 
-.grid--4 {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1.25em;
+.grid {
+    &--4 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1.25em;
+    }
+
+    &--5 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 1.25em;
+    }
 }
 
 .dropdown {
