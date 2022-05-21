@@ -119,6 +119,10 @@ a:focus {
     &-white {
         color: $white;
     }
+
+    &-red {
+        color: $price-red;
+    }
 }
 
 .fw {
@@ -245,6 +249,10 @@ a:focus {
     }
 }
 
+.px-8 {
+    padding: 0 0.5em;
+}
+
 .pr {
     &-40 {
         padding-right: 2.5em;
@@ -285,8 +293,14 @@ a:focus {
     }
 }
 
-.fs-16 {
-    font-size: 1em;
+.fs {
+    &-16 {
+        font-size: 1em;
+    }
+
+    &-22 {
+        font-size: 1.375em;
+    }
 }
 
 .border-bottom-grey {
@@ -303,6 +317,10 @@ a:focus {
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.transition {
+    transition: $transition;
 }
 
 .grid {

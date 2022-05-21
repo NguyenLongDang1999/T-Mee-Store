@@ -86,8 +86,14 @@ const lazyLoad = function () {
     });
 }
 
+const productGallery = function (imageNumber) {
+    const sliderElement = document.getElementById('pgallery');
+    swiffyslider.slideTo(sliderElement, imageNumber)
+}
+
 lazyLoad();
 activeClassAction(".account__dropdown", ".dropdown__account");
 offcanvsSidebar(".header__icon--cart", ".minicart__header--close", ".section-minicart");
 offcanvsSidebar(".header__menu", ".menu__header--close", ".section-menu");
 offcanvsSidebar(".header__icon--search", ".search__close", ".section-search");
+offcanvsSidebar(".quickview--modal", ".modal__header--close", ".section-modal");

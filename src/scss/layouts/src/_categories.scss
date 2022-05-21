@@ -1,4 +1,12 @@
 .categories {
+    &__grid--items {
+        &:hover {
+            .categories__img--items {
+                transform: scale(1.1);
+            }
+        }
+    }
+
     &__content {
         left: 1.25em;
         bottom: 1.25em;

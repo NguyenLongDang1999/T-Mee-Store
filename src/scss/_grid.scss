@@ -353,4 +353,15 @@ hr {
             grid-template-columns: repeat(2, 1fr) !important;
         }
     }
+
+    .six.columns {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .modal {
+        &__content--title {
+            margin-top: 1.875em;
+        }
+    }
 }
