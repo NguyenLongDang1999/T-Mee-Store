@@ -363,8 +363,25 @@ a:focus {
 .section {
     &__header {
         &--title {
-            font-size: 3em;
+            font-size: 1.75em;
         }
+    }
+}
+
+#site-scroll {
+    line-height: 2.1875em;
+    cursor: pointer;
+    width: 2.5em;
+    height: 2.5em;
+    line-height: 2.75em;
+    right: 1.875em;
+    bottom: 2.5em;
+    z-index: 444;
+    box-shadow: 0 0 1px #ddd;
+
+    &:hover {
+        background-color: $black;
+        color: $white;
     }
 }
 
