@@ -1,16 +1,13 @@
 @import "./variables";
 
 // Main
-@import "./reset";
-@import "./grid";
+@import "./normalize";
 @import "./general";
-
-// Components
-@import "./components/menu";
-@import "./components/minicart";
-@import "./components/search";
-@import "./components/modal";
 
 // Layouts
 @import "./layouts/header";
-@import "./layouts/main";
+
+// Components
+@import "./components/minicart";
+@import "./components/menu";
+@import "./components/search"

@@ -1,7 +1,7 @@
 "use strict";
 
 // Active Dropdown,...
-const activeClassAction = function (toggle, target) {
+const activeClassAction = (toggle, target) => {
     const to = document.querySelector(toggle),
         ta = document.querySelector(target);
 
@@ -33,7 +33,7 @@ const activeClassAction = function (toggle, target) {
 };
 
 // OffCanvas Sidebar Activation
-const offcanvsSidebar = function (openTrigger, closeTrigger, wrapper) {
+const offcanvsSidebar = (openTrigger, closeTrigger, wrapper) => {
     let OpenTriggerprimary__btn = document.querySelectorAll(openTrigger);
     let closeTriggerprimary__btn = document.querySelector(
         wrapper + " " + closeTrigger
@@ -84,15 +84,15 @@ const offcanvsSidebar = function (openTrigger, closeTrigger, wrapper) {
 };
 
 // Resize
-const resizeRemoveClass = function (
+const resizeRemoveClass = (
     outerWidth,
     WrapperSidebar,
     wrapperOverlay
-) {
+) => {
     window.addEventListener("resize", function () {
         if (window.outerWidth >= outerWidth) {
-            WrapperSidebar.classList.remove("active");
-            wrapperOverlay.classList.remove("active");
+            WrapperSidebar && WrapperSidebar.classList.remove("active");
+            wrapperOverlay && wrapperOverlay.classList.remove("active");
         }
     });
 };
@@ -108,40 +108,45 @@ const lazyLoad = () => {
     });
 };
 
-const productGallery = function (imageNumber) {
-    const sliderElement = document.getElementById("pgallery");
-    swiffyslider.slideTo(sliderElement, imageNumber);
-};
+const glideSlider = () => {
+    const glide = new Glide('.glide__slider', {
+        autoplay: 10000,
+    });
 
-const scroll_top = function () {
-    document
-        .getElementById("site-scroll")
-        .addEventListener("click", function () {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth",
-            });
-        });
-};
+    glide.mount();
+}
 
-document.addEventListener("scroll", () => {
-    if (window.scrollY > 400) {
-        document.getElementById("site-scroll").style.opacity = "1";
-        document.getElementById("site-scroll").style.visibility = "visible";
-    } else {
-        document.getElementById("site-scroll").style.opacity = "0";
-        document.getElementById("site-scroll").style.visibility = "hidden";
-    }
-});
+// const scroll_top = function () {
+//     document
+//         .getElementById("site-scroll")
+//         .addEventListener("click", function () {
+//             window.scrollTo({
+//                 top: 0,
+//                 behavior: "smooth",
+//             });
+//         });
+// };
+
+// document.addEventListener("scroll", () => {
+//     const scroll = document.getElementById("site-scroll")
+//     const header = document.querySelector('.header')
+
+//     if (window.scrollY > 400) {
+//         scroll.style.opacity = "1";
+//         scroll.style.visibility = "visible";
+//         header.classList.add('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100')
+//     } else {
+//         scroll.style.opacity = "0";
+//         scroll.style.visibility = "hidden";
+//         header.classList.remove('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100')
+//     }
+// });
 
 lazyLoad();
-scroll_top();
-activeClassAction(".account__dropdown", ".dropdown__account");
-offcanvsSidebar(
-    ".header__icon--cart",
-    ".minicart__header--close",
-    ".section-minicart"
-);
-offcanvsSidebar(".header__menu", ".menu__header--close", ".section-menu");
-offcanvsSidebar(".header__icon--search", ".search__close", ".section-search");
+glideSlider();
+// scroll_top();
+activeClassAction(".dropdown__toggle", ".dropdown__account");
+offcanvsSidebar(".open-cart", ".minicart__header--close", ".section-minicart");
+offcanvsSidebar(".open-menu", ".menu__header--close", ".section-menu");
+offcanvsSidebar(".open-search", ".search__close", ".section-search");
 offcanvsSidebar(".quickview--modal", ".modal__header--close", ".section-modal");

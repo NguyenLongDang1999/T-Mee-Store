@@ -1,12 +1,8 @@
 .header {
-    height: 50px;
-    transition: $transition;
-
     &__nav {
         &--link {
-            color: #111;
-            padding: 0.625em 0.9375em;
             letter-spacing: 0.05em;
+            padding: 0.625em 1em;
 
             &:hover {
                 color: $blue;
@@ -20,19 +16,15 @@
             &:after {
                 content: "";
                 width: 0;
-                height: 1px;
+                height: 0.0625em;
                 display: block;
             }
         }
     }
 
-    &__icon {
+    &__icons {
         &--link {
             padding: 0 0.5625em;
-
-            &:hover {
-                color: $blue;
-            }
         }
     }
 }

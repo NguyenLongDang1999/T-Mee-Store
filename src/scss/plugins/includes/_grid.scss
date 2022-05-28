@@ -1,0 +1,112 @@
+// --------------------------------------------------
+// reflex containers
+// --------------------------------------------------
+
+.#{$reflex-prefix}container,
+.#{$reflex-prefix}container-full {
+    @include box-sizing(border-box);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: ($reflex-grid-spacing * 2);
+    padding-left: ($reflex-grid-spacing * 2);
+
+    .#{$reflex-prefix}grid {
+        margin-right: -$reflex-grid-spacing;
+        margin-left: -$reflex-grid-spacing;
+    }
+}
+
+.#{$reflex-prefix}container {
+    @media (min-width: $reflex-md) {
+        max-width: $reflex-md;
+    }
+
+    @media (min-width: $reflex-lg) {
+        max-width: $reflex-lg;
+    }
+}
+
+// --------------------------------------------------
+// reflex grid
+// --------------------------------------------------
+
+.#{$reflex-prefix}grid {
+    @include box-sizing(border-box);
+    display: block;
+    @include display-flex();
+    @include flex-wrap();
+    padding: 0;
+    margin: 0 auto;
+    position: relative;
+    @include setup-whitespace();
+
+    &::before,
+    &::after {
+        @include box-sizing(border-box);
+        @include reset-whitespace();
+    }
+
+    // handle when lists are used as a grid
+    list-style-type: none;
+}
+
+// --------------------------------------------------
+// reflex col defaults
+// --------------------------------------------------
+
+[class*="#{$reflex-prefix}col-"] {
+    @include box-sizing(border-box);
+    @include reset-whitespace();
+    position: relative;
+    width: 100%;
+    vertical-align: top;
+    padding: $reflex-grid-spacing;
+
+    &::before,
+    &::after {
+        @include box-sizing(border-box);
+        @include reset-whitespace();
+    }
+
+    // handle grids nested in columns
+    .#{$reflex-prefix}grid {
+        @include flex(1, 1, auto);
+        margin: -$reflex-grid-spacing;
+    }
+
+    @if $legacy-support ==true {
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+    }
+}
+
+// --------------------------------------------------
+// reflex grid generation
+// --------------------------------------------------
+
+@include make-reflex-grid(col-);
+
+@media (max-width: $reflex-md) {
+    .container {
+        padding-left: 0.9375em !important;
+        padding-right: 0.9375em !important;
+    }
+}
+
+@media (min-width: $reflex-xs) {
+    @include make-reflex-grid(col-xs-);
+}
+
+@media (min-width: $reflex-sm) {
+    @include make-reflex-grid(col-sm-);
+}
+
+@media (min-width: $reflex-md) {
+    @include make-reflex-grid(col-md-);
+}
+
+@media (min-width: $reflex-lg) {
+    @include make-reflex-grid(col-lg-);
+}
