@@ -161,37 +161,37 @@ const glideCategories = () => {
     glide.mount();
 }
 
-// const scroll_top = function () {
-//     document
-//         .getElementById("site-scroll")
-//         .addEventListener("click", function () {
-//             window.scrollTo({
-//                 top: 0,
-//                 behavior: "smooth",
-//             });
-//         });
-// };
+const scroll_top = function () {
+    document
+        .getElementById("site-scroll")
+        .addEventListener("click", function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth",
+            });
+        });
+};
 
-// document.addEventListener("scroll", () => {
-//     const scroll = document.getElementById("site-scroll")
-//     const header = document.querySelector('.header')
+document.addEventListener("scroll", () => {
+    const scroll = document.getElementById("site-scroll")
+    const header = document.querySelector('.header')
 
-//     if (window.scrollY > 400) {
-//         scroll.style.opacity = "1";
-//         scroll.style.visibility = "visible";
-//         header.classList.add('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100')
-//     } else {
-//         scroll.style.opacity = "0";
-//         scroll.style.visibility = "hidden";
-//         header.classList.remove('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100')
-//     }
-// });
+    if (window.scrollY > 400) {
+        scroll.style.opacity = "1";
+        scroll.style.visibility = "visible";
+        header.classList.add('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100', 'transition')
+    } else {
+        scroll.style.opacity = "0";
+        scroll.style.visibility = "hidden";
+        header.classList.remove('sticky-header', 'position-fixed', 'top-0', 'left-0', 'w-100', 'bg-white', 'w-100', 'transition')
+    }
+});
 
 lazyLoad();
 glideSlider();
 glideProduct();
 glideCategories();
-// scroll_top();
+scroll_top();
 activeClassAction(".dropdown__toggle", ".dropdown__account");
 offcanvsSidebar(".open-cart", ".minicart__header--close", ".section-minicart");
 offcanvsSidebar(".open-menu", ".menu__header--close", ".section-menu");
