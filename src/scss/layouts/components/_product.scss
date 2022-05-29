@@ -1,0 +1,54 @@
+.section-product {
+    .product {
+        &:hover {
+            .product__action {
+                opacity: 1;
+                visibility: visible;
+                bottom: 1em;
+            }
+        }
+
+        &__title {
+            margin: 0.625em 0;
+        }
+
+        &__img {
+            border-radius: 0.625em;
+
+            .badge {
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-top: 3.4375em solid #ea6c6c;
+                border-right: 3.4375em solid transparent;
+
+                span {
+                    top: -2.8125em;
+                    left: 0.25em;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &__action {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -3em;
+
+            &--items {
+                width: 2.375em;
+                height: 2.375em;
+                line-height: 2.375em;
+                margin: 0 0.3125em;
+            }
+
+            &--link {
+                &:hover {
+                    color: $white;
+                    background-color: $black;
+                }
+            }
+        }
+    }
+}

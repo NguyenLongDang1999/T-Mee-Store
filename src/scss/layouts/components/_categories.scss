@@ -1,0 +1,9 @@
+.section-categories {
+    .categories {
+        &:hover {
+            .categories__items--img img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

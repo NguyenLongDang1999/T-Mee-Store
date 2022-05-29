@@ -191,6 +191,10 @@ h6 {
         color: $grey;
     }
 
+    &-red {
+        color: $red;
+    }
+
     &-black {
         color: $black;
     }
@@ -296,6 +300,10 @@ h6 {
     &-grey2 {
         background-color: $grey2;
     }
+
+    &-grey3 {
+        background-color: $grey3;
+    }
 }
 
 .mr {
@@ -314,6 +322,10 @@ h6 {
     &-20 {
         padding: 0 1.25em;
     }
+
+    &-8 {
+        padding: 0 0.5em;
+    }
 }
 
 .mb {
@@ -330,6 +342,10 @@ h6 {
     &-16 {
         margin-top: 1em;
     }
+
+    &-80 {
+        margin-top: 5em;
+    }
 }
 
 .pb {
@@ -338,15 +354,33 @@ h6 {
     }
 }
 
+.py {
+    &-80 {
+        padding: 5em 0;
+    }
+}
+
 .pt {
     &-16 {
         padding-top: 1em;
+    }
+
+    &-80 {
+        padding-top: 5em;
     }
 }
 
 .fs {
     &-16 {
         font-size: 1em;
+    }
+
+    &-20 {
+        font-size: 1.25em;
+    }
+
+    &-28 {
+        font-size: 1.75em;
     }
 }
 
@@ -573,5 +607,32 @@ hr {
         top: 2.5em;
         opacity: 1;
         visibility: visible;
+    }
+}
+
+.section-heading {
+    .line {
+        .circle {
+            width: 0.625em;
+            height: 0.625em;
+            background-color: transparent;
+            border: 3px solid #270203;
+            display: inline-block;
+
+            .line-shape {
+                height: 3px;
+                top: 50%;
+                width: 4.375em;
+                margin-top: -1px;
+
+                &.line-left {
+                    left: -80px;
+                }
+
+                &.line-right {
+                    right: -80px;
+                }
+            }
+        }
     }
 }
