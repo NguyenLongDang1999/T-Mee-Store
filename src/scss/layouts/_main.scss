@@ -1,7 +1,8 @@
 .page-content {
     @import "./components/product";
     @import "./components/categories";
-
+    @import "./components/service";
+    
     .glide__arrow--disabled {
         display: none;
     }
