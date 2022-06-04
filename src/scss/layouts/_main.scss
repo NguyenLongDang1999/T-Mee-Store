@@ -2,33 +2,4 @@
     @import "./components/product";
     @import "./components/categories";
     @import "./components/service";
-    
-    .glide__arrow--disabled {
-        display: none;
-    }
-
-    .glide__arrow {
-        box-shadow: none;
-        border: 0;
-
-        &--left {
-            left: -5em;
-        }
-
-        &--right {
-            right: -5em;
-        }
-    }
-
-    @media (max-width: 64em) {
-        .glide__arrow {
-            &--left {
-                left: 0 !important;
-            }
-
-            &--right {
-                right: 0 !important;
-            }
-        }
-    }
 }

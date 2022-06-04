@@ -108,59 +108,6 @@ const lazyLoad = () => {
     });
 };
 
-const glideSlider = () => {
-    const glide = new Glide('.glide__slider', {
-        autoplay: 10000,
-        type: 'carousel',
-        peek: { before: 50, after: 50 }
-    });
-
-    glide.mount();
-}
-
-const glideProduct = () => {
-    const glide = new Glide('.glide__product', {
-        perView: 5,
-        rewind: false,
-        bound: true,
-        breakpoints: {
-            1024: {
-                perView: 4
-            },
-            767: {
-                perView: 3
-            },
-            576: {
-                perView: 2
-            }
-        }
-    });
-
-    glide.mount();
-}
-
-const glideCategories = () => {
-    const glide = new Glide('.glide__categories', {
-        autoplay: 6000,
-        perView: 5,
-        rewind: false,
-        bound: true,
-        breakpoints: {
-            1024: {
-                perView: 4
-            },
-            767: {
-                perView: 3
-            },
-            576: {
-                perView: 2
-            }
-        }
-    });
-
-    glide.mount();
-}
-
 const scroll_top = function () {
     document
         .getElementById("site-scroll")
@@ -187,13 +134,15 @@ document.addEventListener("scroll", () => {
     }
 });
 
+const thumbGallery = function (imageNumber) {
+    const sliderElement = document.getElementById('pgallery');
+    swiffyslider.slideTo(sliderElement, imageNumber)
+}
+
 lazyLoad();
-glideSlider();
-glideProduct();
-glideCategories();
 scroll_top();
 activeClassAction(".dropdown__toggle", ".dropdown__account");
 offcanvsSidebar(".open-cart", ".minicart__header--close", ".section-minicart");
 offcanvsSidebar(".open-menu", ".menu__header--close", ".section-menu");
 offcanvsSidebar(".open-search", ".search__close", ".section-search");
-offcanvsSidebar(".quickview--modal", ".modal__header--close", ".section-modal");
+offcanvsSidebar(".open-quickview", ".modal__header--close", ".section-modal");

@@ -93,6 +93,16 @@
         padding-left: 0.9375em !important;
         padding-right: 0.9375em !important;
     }
+
+    .section-product {
+        .product {
+            &__action {
+                opacity: 1 !important;
+                visibility: visible !important;
+                bottom: 1em !important;
+            }
+        }
+    }
 }
 
 @media (min-width: $reflex-xs) {
