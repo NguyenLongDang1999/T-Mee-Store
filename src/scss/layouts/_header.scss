@@ -26,6 +26,14 @@
         &--link {
             padding: 0 0.5625em;
         }
+
+        &--badge {
+            font-size: 0.6875em;
+            min-width: 2em;
+            height: 2em;
+            line-height: 2em;
+            top: -1em;
+        }
     }
 }
 

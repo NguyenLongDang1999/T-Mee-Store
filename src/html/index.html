@@ -103,7 +103,9 @@
                     </div>
 
                     <div class="col-lg-3 col-6">
-                        <ul class="header__icons d-flex justify-end">
+                        <ul
+                            class="header__icons d-flex justify-end align-center"
+                        >
                             <li>
                                 <a
                                     href="javascript:void(0)"
@@ -136,7 +138,39 @@
                                 </a>
                             </li>
 
-                            <li>
+                            <li class="position-relative">
+                                <a
+                                    href="wishlist.html"
+                                    class="header__icons--link"
+                                    aria-label="Yêu Thích"
+                                    data-microtip-position="bottom"
+                                    data-bs-toggle="tooltip"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        height="16"
+                                        viewBox="0 0 24 24"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        class="feather feather-heart"
+                                    >
+                                        <path
+                                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                                        ></path>
+                                    </svg>
+                                </a>
+
+                                <span
+                                    class="header__icons--badge position-absolute border-radius-50 right-0 bg-blue text-white text-center"
+                                    >5</span
+                                >
+                            </li>
+
+                            <li class="position-relative">
                                 <a
                                     href="javascript:void(0)"
                                     class="header__icons--link open-cart"
@@ -169,6 +203,11 @@
                                         <path d="M16 10a4 4 0 0 1-8 0"></path>
                                     </svg>
                                 </a>
+
+                                <span
+                                    class="header__icons--badge position-absolute border-radius-50 right-0 bg-blue text-white text-center"
+                                    >5</span
+                                >
                             </li>
 
                             <li class="position-relative">
@@ -198,7 +237,6 @@
                                     </svg>
                                 </a>
 
-                                <!-- Begin:: Dropdown -->
                                 <ul
                                     class="dropdown dropdown__account position-absolute right-0 bg-white opacity-0 visibility-hidden"
                                 >
@@ -218,8 +256,50 @@
                                         >
                                     </li>
                                 </ul>
-                                <!-- End:: Dropdown -->
                             </li>
+
+                            <!-- Begin:: After Login -->
+                            <!-- <li class="position-relative d-flex align-center">
+                                <a
+                                    href="javascript:void(0)"
+                                    class="header__icons--link dropdown__toggle d-flex align-center"
+                                    aria-label="Tài Khoản"
+                                    data-microtip-position="bottom"
+                                    data-bs-toggle="tooltip"
+                                >
+                                    <p class="mb-0 mr-16 text-capitalize text-truncate hidden-sm-down">Nguyễn Long Đăng</p>
+
+                                    <img
+                                        data-src="https://via.placeholder.com/32x32.png/77fc03"
+                                        title="Avatar"
+                                        alt="Avatar"
+                                        class="lazy border-radius-50"
+                                        width="32"
+                                        height="32"
+                                    />
+                                </a>
+
+                                <ul
+                                    class="dropdown dropdown__account position-absolute right-0 bg-white opacity-0 visibility-hidden"
+                                >
+                                    <li class="dropdown__item">
+                                        <a
+                                            href="login.html"
+                                            class="dropdown__link text-uppercase d-block"
+                                            >Đăng Nhập</a
+                                        >
+                                    </li>
+
+                                    <li class="dropdown__item">
+                                        <a
+                                            href="register.html"
+                                            class="dropdown__link text-uppercase d-block"
+                                            >Đăng Ký</a
+                                        >
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <!-- End:: After Login -->
                         </ul>
                     </div>
                 </div>
