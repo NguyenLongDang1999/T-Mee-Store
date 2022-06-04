@@ -214,6 +214,10 @@ h6 {
     }
 }
 
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
 .w-100 {
     width: 100%;
 }
@@ -404,6 +408,10 @@ h6 {
 
 .border-bottom-offcanvas {
     border-bottom: 1px solid #e8e8e8;
+}
+
+.border-card {
+    border: 1px solid #e8e8e8;
 }
 
 .opacity-0 {
