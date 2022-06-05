@@ -324,6 +324,10 @@ h6 {
     &-20 {
         padding: 1.25em;
     }
+
+    &-40 {
+        padding: 2.5em;
+    }
 }
 
 .px {
@@ -367,6 +371,10 @@ h6 {
 .pb {
     &-16 {
         padding-bottom: 1em;
+    }
+
+    &-80 {
+        padding-bottom: 5em;
     }
 }
 
@@ -439,6 +447,12 @@ h6 {
     &.active {
         opacity: 0.5;
         visibility: visible;
+    }
+}
+
+.pristine-error {
+    &.text-help {
+        color: $red;
     }
 }
 
