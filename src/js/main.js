@@ -139,8 +139,56 @@ const thumbGallery = function (imageNumber) {
     swiffyslider.slideTo(sliderElement, imageNumber)
 }
 
+var getSiblings = function (elem) {
+    const siblings = [];
+    let sibling = elem.parentNode.firstChild;
+    while (sibling) {
+        if (sibling.nodeType === 1 && sibling !== elem) {
+            siblings.push(sibling);
+        }
+        sibling = sibling.nextSibling;
+    }
+    return siblings;
+};
+
+const tabActive = function (wrapper) {
+    let tabContainer = document.querySelector(wrapper);
+
+    if (tabContainer) {
+        tabContainer.addEventListener("click", function (evt) {
+            let listItem = evt.target;
+
+            if (listItem.hasAttribute("data-toggle")) {
+                let targetId = listItem.dataset.target,
+                    targetItem = document.querySelector(targetId);
+
+                listItem.parentElement
+                    .querySelectorAll('[data-toggle="tab"]')
+                    .forEach(function (list) {
+                        list.classList.remove("active");
+                    });
+
+                listItem.classList.add("active");
+                targetItem.classList.add("active");
+
+                setTimeout(function () {
+                    targetItem.classList.add("show");
+                }, 150);
+
+                getSiblings(targetItem).forEach(function (pane) {
+                    pane.classList.remove("show");
+                    setTimeout(function () {
+                        pane.classList.remove("active");
+                    }, 150);
+                });
+            }
+        });
+    }
+};
+
 lazyLoad();
 scroll_top();
+tabActive('.product__details--tab');
 activeClassAction(".dropdown__toggle", ".dropdown__account");
 offcanvsSidebar(".open-cart", ".minicart__header--close", ".section-minicart");
 offcanvsSidebar(".open-menu", ".menu__header--close", ".section-menu");

@@ -1,0 +1,62 @@
+.section-product {
+    .product__details {
+        &--tab {
+            &__list {
+                padding: 0 0 0.625em;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                margin-right: 2.5em;
+
+                &.active {
+                    color: $black;
+                    
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+                &:hover {
+                    color: $black;
+    
+                    &::before {
+                        width: 100%;
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    width: 0;
+                    height: 1px;
+                    transition: $transition;
+                    background-color: $black;
+                    position: absolute;
+                    bottom: -1px;
+                    left: 0;
+                    right: 0;
+                }
+            }
+
+            &__inner {
+                padding-top: 1.875em;
+
+                .tab_pane {
+                    display: none;
+                    transition: $transition;
+
+                    &:not(.show) {
+                        opacity: 0;
+                    }
+
+                    &.active {
+                        display: block;
+                    }
+
+                    &.show {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
